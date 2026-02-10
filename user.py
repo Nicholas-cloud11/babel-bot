@@ -1,4 +1,4 @@
-from registry import *
+from config import *
 from datetime import datetime, timedelta
 
 
