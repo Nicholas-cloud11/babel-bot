@@ -12,8 +12,8 @@ from user import *
 
 load_dotenv()
 token = os.getenv('DISCORD_TOKEN')
-# mongo_client = MongoClient(os.getenv('MONGO_URI'))
-# db = mongo_client.get_database()
+mongo_client = MongoClient(os.getenv('MONGO_URI'))
+db = mongo_client.get_database()
 
 handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
 intents = discord.Intents.default()
